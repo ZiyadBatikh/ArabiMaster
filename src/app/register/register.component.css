@@ -1,0 +1,21 @@
+.google-login {
+  color: white;
+  height: 3rem;
+}
+
+.btn-login{
+  height: 3rem;
+  background-color: #108a00;
+  color: white;
+}
+.facebook-login {
+  height: 3rem;
+  color: black;
+  border: 1px solid black;
+}
+
+
+.login-link{
+  text-decoration: none;
+  color: #108a00;
+}

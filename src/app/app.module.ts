@@ -1,18 +1,47 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReservationsComponent } from './reservations/reservations.component';
+import { TutorProfileComponent } from './Tutor/tutor-profile/tutor-profile.component';
+import { TutorEditProfileComponent } from './Tutor/tutor-edit-profile/tutor-edit-profile.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReservationsComponent,
+    TutorProfileComponent,
+    TutorEditProfileComponent,
+    LoginComponent,
+    RegisterComponent,
+    NavbarComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    NgbModule,
+    RouterModule.forRoot([
+      {path :"" , component:HomeComponent},
+      {path:"Login" , component:LoginComponent},
+      {path:"Register" , component:RegisterComponent},
+      {path:"Reservations" , component:ReservationsComponent}
+
+
+    ])
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

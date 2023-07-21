@@ -1,0 +1,168 @@
+<form #f="ngForm" (ngSubmit)="(f)">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card align-items-center rounded-4 mb-5" style="width: 35rem">
+        <h4 class="m-4">Register to ArabiMaster</h4>
+        <div class="col-10">
+          <div class="d-grid gap-2">
+            <button
+              class="btn btn-primary rounded-5 google-login mb-2"
+              type="button"
+            >
+              Continue with Google
+            </button>
+            <button
+              class="btn btn-outline-light rounded-5 facebook-login mb-2"
+              type="button"
+            >
+              Continue with Facebook
+            </button>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <hr />
+              </div>
+              <div class="col-md-2 text-center">
+                <span class="separator-text">Or</span>
+              </div>
+              <div class="col-md-5">
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              ngModel
+              name="Email"
+              #email="ngModel"
+              type="text"
+              id="Email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+            <div
+              class="alert alert-warning"
+              *ngIf="email.touched && !email.valid"
+            >
+              <div *ngIf="email.errors?.['required']">Email is required</div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              ngModel
+              name="password"
+              #password="ngModel"
+              type="password"
+              id="password"
+              class="form-control"
+              required
+              minlength="8"
+              placeholder="Enter your Password (8 or more characters)"
+            />
+            <div
+              class="alert alert-warning"
+              *ngIf="password.touched && !password.valid"
+            >
+              <div *ngIf="password.errors?.['required']">
+                Password is required
+              </div>
+              <div *ngIf="password.errors?.['minlength']">
+                Password should be 8 characters or more.
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <select
+              ngModel
+              name="country"
+              #country="ngModel"
+              type="country"
+              id="country"
+              class="form-control"
+              required
+              placeholder="Country"
+            >
+              <option value="">-- Select Country --</option>
+              <option value="USA">United States</option>
+              <option value="CA">Canada</option>
+              <option value="UK">United Kingdom</option>
+              <option value="JP">Japan</option>
+            </select>
+
+            <div
+              class="alert alert-warning"
+              *ngIf="country.touched && !country.valid"
+            >
+              <div *ngIf="country.errors?.['required']">
+                Country is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              ngModel
+              name="firstname"
+              #firstname="ngModel"
+              type="firstname"
+              id="firstname"
+              class="form-control"
+              required
+              placeholder="Enter your firstname"
+            />
+            <div
+              class="alert alert-warning"
+              *ngIf="firstname.touched && !firstname.valid"
+            >
+              <div *ngIf="firstname.errors?.['required']">
+                Firstname is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <input
+              ngModel
+              name="lastname"
+              #lastname="ngModel"
+              type="lastname"
+              id="lastname"
+              class="form-control"
+              required
+              placeholder="Enter your lastname"
+            />
+            <div
+              class="alert alert-warning"
+              *ngIf="lastname.touched && !lastname.valid"
+            >
+              <div *ngIf="lastname.errors?.['required']">
+                lastname is required
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn rounded-5 btn-login mb-4" type="button">
+              Submit
+            </button>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <hr />
+              </div>
+              <div class="col-md-6 text-center mb-5">
+                <span class="separator-text"
+                  >Already have an account?
+                  <a class="login-link" routerLink="/Login">Login</a></span
+                >
+              </div>
+              <div class="col-md-3">
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

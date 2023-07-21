@@ -1,0 +1,33 @@
+input{
+  outline: none;
+}
+
+.btn-login {
+  background-color: #108a00;
+  color: white;
+  height: 3rem;
+
+}
+
+.btn-login:hover{
+  background-color:#1da80b ;
+  transition: background-color 0.3s ease;
+}
+
+.google-login {
+  color: white;
+  height: 3rem;
+}
+
+.facebook-login {
+  height: 3rem;
+  color: black;
+  border: 1px solid black;
+}
+
+.register-login{
+  height: 3rem;
+  width: 14rem;
+  margin-left: 4.5rem
+
+}
