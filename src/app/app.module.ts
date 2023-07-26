@@ -12,6 +12,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { OurTutorsComponent } from './our-tutors/our-tutors.component';
+import { OurMethodologyComponent } from './our-methodology/our-methodology.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     NavbarComponent,
     HomeComponent,
+    OurTutorsComponent,
+    OurMethodologyComponent,
 
   ],
   imports: [
@@ -34,7 +38,10 @@ import { FormsModule } from '@angular/forms';
       {path :"" , component:HomeComponent},
       {path:"Login" , component:LoginComponent},
       {path:"Register" , component:RegisterComponent},
-      {path:"Reservations" , component:ReservationsComponent}
+      {path:"Reservations" , component:ReservationsComponent},
+      {path:"how-we-teach" , component:OurMethodologyComponent},
+      {path:"featured-tutors" , component:OurTutorsComponent},
+
 
 
     ])

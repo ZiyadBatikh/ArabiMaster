@@ -4,6 +4,7 @@
 body{
   padding-top: 150px;
   box-sizing: border-box;
+  background-color: rgb(255, 234, 214)
 }
 
 input{

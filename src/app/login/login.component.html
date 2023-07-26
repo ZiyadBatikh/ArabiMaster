@@ -43,7 +43,11 @@
             </div>
           </div>
           <div class="d-grid gap-2">
-            <button class="btn rounded-5 btn-login mb-4" type="button">
+            <button
+              (click)="emailLogin()"
+              class="btn rounded-5 btn-login mb-4"
+              type="button"
+            >
               Continue with Email
             </button>
             <div class="container">
@@ -60,12 +64,14 @@
               </div>
             </div>
             <button
+              (click)="googleLogin()"
               class="btn btn-primary rounded-5 google-login mb-4"
               type="button"
             >
               Continue with Google
             </button>
             <button
+              (click)="facebookLogin()"
               class="btn btn-outline-light rounded-5 facebook-login mb-4"
               type="button"
             >
