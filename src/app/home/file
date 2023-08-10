@@ -1,0 +1,94 @@
+<div class="container mt-5" data-aos="flip-left">
+  <div class="row">
+    <h2 class="text-warning tutor-choose text-center mb-5 mt-5">
+      Advance your English with a learning <br />
+      plan that works for you
+    </h2>
+    <div class="card-group d-flex justify-content-center mx-auto">
+      <div class="card rounded-5 text-bg-light m-3 border-0">
+        <div class="card-header"><h3>Private</h3></div>
+        <div class="card-body">
+          <ul>
+            <li class="card-text">30+ minutes 1:1 private lessons</li>
+            <li class="card-text">
+              On-demand and Scheduled lessons available 24/7
+            </li>
+            <li class="card-text">Lessons tailored to your individual goals</li>
+            <li class="card-text">Native speaking tutor of your choice</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p class="course-start mb-0">Starting from</p>
+
+          <h4 class="col-6 salary mr-0">EGP 1000</h4>
+          <p class="col-6 period">/Per month</p>
+
+          <div class="d-flex justify-content-center">
+            <button
+              class="btn btn-success go-learning rounded-5 mb-3"
+              routerLink="/Register"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0 rounded-5 text-bg-light m-3">
+        <div class="card-header"><h3>Groups</h3></div>
+        <div class="card-body">
+          <ul>
+            <li class="card-text">
+              30 or 60 minute group lessons with 1-2 other students
+            </li>
+            <li class="card-text">Choose from a variety of topics and times</li>
+            <li class="card-text">Lessons that emulate a real-world setting</li>
+            <li class="card-text">
+              Practice with peers and a native speaking tutor
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p class="course-start mb-0">Starting from</p>
+
+          <h4 class="col-6">EGP 80</h4>
+          <p class="col-6 period">/Per month</p>
+
+          <div class="d-flex justify-content-center">
+            <button
+              class="btn btn-success go-learning rounded-5 mb-3"
+              routerLink="/Register"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card border-0 rounded-5 text-bg-light m-3">
+        <div class="card-header"><h3>Kids</h3></div>
+        <div class="card-body">
+          <ul>
+            <li class="card-text">1:1 time with specialized tutors</li>
+            <li class="card-text">Beginner to advanced courses available</li>
+            <li class="card-text">Fun games and activities</li>
+            <li class="card-text">For kids and teens</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <p class="course-start mb-0">Starting from</p>
+
+          <h4 class="col-6">EGP 300</h4>
+          <p class="col-6 period">/Per month</p>
+
+          <div class="d-flex justify-content-center">
+            <button
+              class="btn btn-success go-learning rounded-5 mb-3"
+              routerLink="/Register"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

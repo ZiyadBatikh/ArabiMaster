@@ -1,0 +1,20 @@
+
+.tutors-summary{
+  margin-left: 25%;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.sign-up{
+  width: 20rem;
+  height: 3rem;
+}
+
+
+.footer{
+  background-color: rgb(248, 221, 195);
+  height: 80px;
+}

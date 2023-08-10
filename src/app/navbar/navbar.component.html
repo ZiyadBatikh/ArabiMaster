@@ -1,5 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-custom fixed-top">
-  <div class="container-fluid">
+<nav
+  class="navbar navbar-expand-lg navbar-custom fixed-top"
+  [ngClass]="{ 'bg-warning': !isScrolled, scrolled: isScrolled }"
+>
+  <div class="container">
     <a class="navbar-brand" routerLink="/">
       <img class="logo" src="../../assets/img/logo/arabic.png" alt="" />
     </a>
@@ -19,9 +22,7 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/featured-tutors">Our Tutors</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" routerLink="/how-we-teach">Our Methodology</a>
         </li>
@@ -41,7 +42,9 @@
             class="dropdown-menu"
             aria-labelledby="navbarDropdown"
           >
-            <li><a class="dropdown-item" href="#">Tutor Profile</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/profile">Tutor Profile</a>
+            </li>
             <li>
               <a class="dropdown-item" routerLink="/Reservations"
                 >Reservations</a
@@ -52,13 +55,13 @@
           </ul>
         </li>
       </ul>
-      <!-- Move Register and Login links to the right -->
+
       <ul class="navbar-nav">
-        <li class="nav-item btn btn-outline-info rounded-5">
-          <a class="nav-link" routerLink="/Login">Login</a>
+        <li class="nav-item btn btn-secondary rounded-5">
+          <a class="nav-link text-white" routerLink="/Login">Login</a>
         </li>
-        <li class="nav-item btn btn-warning rounded-5 ms-1">
-          <a class="nav-link" routerLink="/Register">Get Started</a>
+        <li class="nav-item btn btn-success rounded-5 ms-2">
+          <a class="nav-link text-white" routerLink="/Register">Sign Up</a>
         </li>
       </ul>
     </div>

@@ -2,9 +2,9 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
-  padding-top: 150px;
+  padding-top: 75px;
   box-sizing: border-box;
-  background-color: rgb(255, 234, 214)
+  background-color: rgb(241, 229, 217);
 }
 
 input{

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../services/authentication/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -6,15 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  emailLogin(){
 
+  constructor(public auth:AuthService){}
+  emailLogin(){
+  this.emailLogin();
   }
 
   googleLogin(){
-
+  this.googleLogin();
   }
 
   facebookLogin(){
-
+   this.facebookLogin();
   }
 }

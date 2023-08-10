@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+constructor(){}
 
+googleReg(){
+
+}
+
+facebookReg(){
+
+}
+
+emailReg(){
+
+}
 }

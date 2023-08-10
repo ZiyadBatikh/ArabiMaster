@@ -2,13 +2,19 @@
   width: 50px;
 }
 
-
-.navbar-custom{
-  background-color: rgb(255, 234, 214)
+.navbar-custom {
+  background-color: #ffc107; /* Change this to your desired default background color */
+  transition: background-color 0.3s ease; /* Add a transition effect for smooth color change */
 }
 
+/* Style for the fixed navbar after scrolling down */
+.navbar-custom.scrolled {
+  background-color: rgb(241, 229, 217); /* Change this to the color you want after scrolling down */
+}
+
+
 .dropdown-menu{
-  background-color: rgb(255, 234, 214);
+ background-color: rgb(255, 250, 245)
 }
 
 .dropdown-item:hover{
