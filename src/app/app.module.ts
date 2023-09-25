@@ -16,6 +16,8 @@ import { OurTutorsComponent } from './our-tutors/our-tutors.component';
 import { OurMethodologyComponent } from './our-methodology/our-methodology.component';
 import { AuthService } from './services/authentication/auth.service';
 import { AuthGuardService } from './services/authentication/auth-guard.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UserRegisterService } from './services/user-register.service';
 
 @NgModule({
   declarations: [
@@ -30,12 +32,14 @@ import { AuthGuardService } from './services/authentication/auth-guard.service';
     OurTutorsComponent,
     OurMethodologyComponent,
 
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule,
     RouterModule.forRoot([
 
       {path :"" , component:HomeComponent},
@@ -54,6 +58,8 @@ import { AuthGuardService } from './services/authentication/auth-guard.service';
   ],
   providers: [
    AuthService,
+   AuthGuardService,
+   UserRegisterService
 
 
   ],
